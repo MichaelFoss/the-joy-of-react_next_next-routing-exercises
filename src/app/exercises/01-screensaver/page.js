@@ -22,7 +22,10 @@ function ScreenSaverExercise() {
       <ul style={{ listStyle: 'none' }}>
         {colors.map((color) => (
           <li key={color}>
-            <Link href={`/exercises/01-screensaver/${color}`}>{color}</Link>
+            <Link href={`/exercises/01-screensaver/${color}`}>
+              <Circle color={color} />
+              {color}
+            </Link>
           </li>
         ))}
       </ul>
